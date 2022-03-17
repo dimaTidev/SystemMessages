@@ -1,0 +1,16 @@
+{
+    "name": "com.dimati.system.message.RuntimeTests",
+    "rootNamespace": "",
+    "references": [
+        "com.dimati.system.message.Runtime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

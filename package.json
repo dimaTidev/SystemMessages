@@ -1,0 +1,21 @@
+{
+    "name": "com.dimati.system.message",
+    "displayName": "System messages",
+    "version": "0.0.1",
+    "unity": "2018.4",
+    "unityRelease": "",
+    "description": "",
+    "author": "DimaTi <timofeenkodima@gmail.com> (https://github.com/dimaTidev)",
+    "keywords": [
+        "Base"
+    ],
+    "category": "Base",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/dimaTidev/SystemMessages.git"
+    },
+    "gitDependencies": {
+    },
+    "dependencies": {
+    }
+}
