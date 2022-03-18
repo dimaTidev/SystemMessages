@@ -53,9 +53,6 @@ public class SystemMessage : MonoBehaviour//ASingleton<SystemMessage>
 
     Queue<MsgData> listOfMsgs = new Queue<MsgData>();
 
-
-   
-
     public class MsgData
     {
         public string text;
@@ -74,6 +71,12 @@ public class SystemMessage : MonoBehaviour//ASingleton<SystemMessage>
         // Debug.Log("Queued msg: " + msg);
         if (!Instance)
             return;
+
+        if(Instance.listOfMsgs.Any(x => x.text == msg && x.msgType == msgType))
+        {
+            Debug.Log("Was trying to Log the existing msg! Msg was ignored: " + msg);
+            return;
+        }
 
         Instance.listOfMsgs.Enqueue(new MsgData(msgType, msg));
         Instance.ShowMsgs();
