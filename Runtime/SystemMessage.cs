@@ -69,7 +69,7 @@ public class SystemMessage : MonoBehaviour//ASingleton<SystemMessage>
     }
     public enum MsgType { Error, Normal }
 
-    public static void Show_Message(string msg, MsgType msgType = MsgType.Normal)
+    public static void Log(string msg, MsgType msgType = MsgType.Normal)
     {
         // Debug.Log("Queued msg: " + msg);
         if (!Instance)
